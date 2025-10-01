@@ -10,23 +10,23 @@ import '@xyflow/react/dist/style.css';
 const App = () => {
     return (
         <div className="app-container">
-            <header className="app-header">
-                <TopBar />
-            </header>
-            <div className="app-body">
-                <DnDProvider>
-                    <ReactFlowProvider>
-                        <Sidebar />
-                        <main className="app-main">
-                            <SearchBar />
-                                <div className="editor-container">
-                                    <FlowEditor />
-                                    <Background />
-                                </div>
-                        </main>
-                    </ReactFlowProvider>
-                </DnDProvider>
-            </div>
+            <DnDProvider>
+                <ReactFlowProvider>
+                <header className="app-header">
+                    <TopBar />
+                </header>
+                <div className="app-body">
+                    <Sidebar />
+                    <main className="app-main">
+                        <SearchBar />
+                            <div className="editor-container">
+                                <FlowEditor />
+                                <Background />
+                            </div>
+                    </main>
+                </div>
+                </ReactFlowProvider>
+            </DnDProvider>
         </div>
     );
 };
